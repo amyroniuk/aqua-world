@@ -1,0 +1,26 @@
+{
+  "name": "apa",
+  "version": "1.0.0",
+  "description": "Aqua World",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amyroniuk/apa.git"
+  },
+  "keywords": [
+    "apa",
+    "profu"
+  ],
+  "author": "Andrii Myroniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amyroniuk/apa/issues"
+  },
+  "homepage": "https://github.com/amyroniuk/apa#readme"
+}
