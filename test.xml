@@ -1,0 +1,70 @@
+			<offer id="5492" available="true">
+				<url>https://aqua-world.com.ua/catalog/dushevye_kabiny_poddony/dushevye_kabiny/seriya_walk_in/peregorodka_dusha_walk_in/</url>
+				<price>6165</price>
+				<currencyId>UAH</currencyId>
+				<categoryId>12</categoryId>
+				<picture>https://aqua-world.com.ua/pictures/5492.jpg</picture>
+				<picture>https://aqua-world.com.ua/upload/iblock/4fb/4fb9e5b9918c78db85774e7049fdcbf3.jpg</picture>
+				<vendor>Aqua-World</vendor>
+				<stock_quantity>5</stock_quantity>
+				<name>Душевая перегородка Aqua-World WALK-IN WL80S(Tr)</name>
+				<description></description>
+				<param name="Производитель">Aqua-World</param>
+				<param name="Наличие поддона">Без поддона</param>
+				<param name="Тип">Душевая стенка</param>
+				<param name="Задние стенки">Нет</param>
+				<param name="Длина">80</param>
+				<param name="Цвет">Прозрачный</param>
+				<param name="Материал">Стекло</param>
+				<param name="Размеры коробки">80x190</param>
+				<param name="Страна-производитель">Китай</param>
+				<param name="Гарантия">2 года</param>
+				<param name="Доставка/Оплата"> </param>
+			</offer>
+			<offer id="5493" available="true">
+				<url>https://aqua-world.com.ua/catalog/dushevye_kabiny_poddony/dushevye_kabiny/seriya_walk_in/peregorodka_dusha_walk_in_1/</url>
+				<price>6456</price>
+				<currencyId>UAH</currencyId>
+				<categoryId>12</categoryId>
+				<picture>https://aqua-world.com.ua/pictures/5493.jpg</picture>
+				<picture>https://aqua-world.com.ua/upload/iblock/4fb/4fb9e5b9918c78db85774e7049fdcbf3.jpg</picture>
+				<vendor>Aqua-World</vendor>
+				<stock_quantity>10</stock_quantity>
+				<name>Душевая перегородка Aqua-World WALK-IN WL90S(Tr)</name>
+				<description></description>
+				<param name="Производитель">Aqua-World</param>
+				<param name="Наличие поддона">Без поддона</param>
+				<param name="Тип">Душевая стенка</param>
+				<param name="Задние стенки">Нет</param>
+				<param name="Длина">90</param>
+				<param name="Цвет">Прозрачный</param>
+				<param name="Материал">Стекло</param>
+				<param name="Размеры коробки">90x190</param>
+				<param name="Страна-производитель">Китай</param>
+				<param name="Гарантия">2 года</param>
+				<param name="Доставка/Оплата"> </param>
+			</offer>
+			<offer id="5914" available="true">
+				<url>https://aqua-world.com.ua/catalog/dushevye_kabiny_poddony/dushevye_kabiny/seriya_walk_in/peregorodka_dusha_walk_in_1/</url>
+				<price>6513</price>
+				<currencyId>UAH</currencyId>
+				<categoryId>12</categoryId>
+				<picture>https://aqua-world.com.ua/upload/iblock/9ee/9ee0684ce03f1a42498a1b087cecc6e6.jpg</picture>
+				<picture>https://aqua-world.com.ua/upload/iblock/903/903f11c0833729cda2dced65c0571837.jpg</picture>
+				<vendor>Aqua-World</vendor>
+				<stock_quantity>10</stock_quantity>
+				<name>Душевая перегородка Aqua-World WALK-IN WL100S(Tr)</name>
+				<description></description>
+				<param name="Производитель">Aqua-World</param>
+				<param name="Наличие поддона">Без поддона</param>
+				<param name="Тип">Душевая стенка</param>
+				<param name="Задние стенки">Нет</param>
+				<param name="Длина">100</param>
+				<param name="Цвет двери/стенки">Прозрачный</param>
+				<param name="Цвет профиля">Хром</param>
+				<param name="Материал">Стекло</param>
+				<param name="Размеры коробки">100x190</param>
+				<param name="Страна-производитель">Китай</param>
+				<param name="Гарантия">2 года</param>
+				<param name="Доставка/Оплата"> </param>
+			</offer>
