@@ -7,6 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
+    "start": "nodemon --exec babel-node -- index.js",
     "test": "npm test"
   },
   "repository": {
@@ -22,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/amyroniuk/apa/issues"
   },
-  "homepage": "https://github.com/amyroniuk/apa#readme"
+  "homepage": "https://github.com/amyroniuk/apa#readme",
+  "dependencies": {
+    "@fast-csv/parse": "^4.3.6",
+    "js2xmlparser": "^4.0.1",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  }
 }
