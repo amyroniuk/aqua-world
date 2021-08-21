@@ -1,8 +1,11 @@
 {
-  "name": "apa",
+  "name": "aqua-world",
   "version": "1.0.0",
   "description": "Aqua World",
   "main": "index.js",
+  "bin": {
+    "pula": "./bin/cli.js"
+  },
   "directories": {
     "doc": "doc"
   },
