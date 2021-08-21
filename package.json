@@ -1,6 +1,6 @@
 {
   "name": "aqua-world",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aqua World",
   "main": "index.js",
   "bin": {
