@@ -62,8 +62,20 @@ const updateXML = (path, prices) => {
       const new_xml = {
         offer: [],
       };
+      console.info(`Total offers count: ${result.offers.offer.length}`);
+      let updatedOffersCount = 0;
+
       result.offers.offer.forEach((offer) => {
         const next_offer = {};
+        const offerId = offer.$.id;
+        const price = prices[offerId];
+
+        if (price === undefined) {
+          console.warn(`Price for offer #${offerId} was not found in CSV`);
+        } else {
+          updatedOffersCount++;
+        }
+
         Object.keys(offer).forEach((key) => {
           if (key === "$") {
             next_offer["@"] = offer["$"];
@@ -86,9 +98,11 @@ const updateXML = (path, prices) => {
             });
           }
         });
-        next_offer.price[0]["#"] = prices[offer.$.id] || "";
+
+        next_offer.price[0]["#"] = price || "";
         new_xml.offer.push(next_offer);
       });
+      console.info(`Updated offers count: ${updatedOffersCount}`);
       const xmlText = parseJsToXML("offers", new_xml, {
         declaration: {
           include: true,
@@ -114,5 +128,5 @@ readCSV(csvPath)
     fs.writeFileSync(xmlOutPath, xml);
   })
   .then(() => {
-    console.log(`Saved output to ${xmlOutPath}`);
+    console.info(`Saved output to ${xmlOutPath}`);
   });
