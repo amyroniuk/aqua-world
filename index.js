@@ -6,7 +6,26 @@ import fs from "fs";
 import yargs from "yargs/yargs";
 import { hideBin } from "yargs/helpers";
 
-const argv = yargs(hideBin(process.argv)).argv;
+const argv = yargs(hideBin(process.argv))
+  .option('csv', {
+    demandOption: true,
+    describe: 'input CSV separated by ";"',
+    type: 'string',
+  })
+  .option('xml', {
+    demandOption: true,
+    describe: 'input XML',
+    type: 'string',
+  })
+  .option('out', {
+    default: 'output.xml',
+    describe: 'output xml',
+    type: 'string',
+  })
+  .epilogue('For more information contact https://aqua-world.com.ua/')
+  .hide('help')
+  .hide('version')
+  .argv;
 
 const cwd = process.cwd();
 const csvPath = path.resolve(cwd, argv.csv);
