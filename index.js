@@ -104,9 +104,13 @@ const updateXML = (path, prices) => {
       });
       console.info(`Updated offers count: ${updatedOffersCount}`);
       const xmlText = parseJsToXML("offers", new_xml, {
+        cdataInvalidChars: true,
         declaration: {
           include: true,
           encoding: "UTF-8",
+        },
+        format: {
+          doubleQuotes: true,
         },
       });
       resolve(xmlText);
