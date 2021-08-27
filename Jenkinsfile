@@ -21,6 +21,8 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm run build'
+        sh 'git config --global user.email "jenkins@jwt.ovh"'
+        sh 'git config --global user.name "jenkins"'
         sh 'git add .'
         sh 'git commit -m "Build"'
         sshagent (credentials: ['jenkins-github']) {
