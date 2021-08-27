@@ -21,6 +21,11 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm run build'
+        sh 'git add .'
+        sh 'git commit -m "Build"'
+        sshagent (credentials: ['jenkins-github']) {
+          sh 'git push'
+        }
       }
     }
   }
