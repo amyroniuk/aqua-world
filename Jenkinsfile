@@ -23,10 +23,10 @@ pipeline {
         sh 'npm run build'
         sh 'git config --global user.email "jenkins@jwt.ovh"'
         sh 'git config --global user.name "jenkins"'
-        sh 'git add .'
-        sh 'git commit -m "Build"'
+        sh 'git status'
+        sh 'git commit -am "Build"'
         sshagent (credentials: ['jenkins-github']) {
-          sh 'git push'
+          sh 'git push origin main'
         }
       }
     }
