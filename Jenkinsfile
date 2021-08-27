@@ -20,6 +20,7 @@ pipeline {
 
     stage('Build') {
       steps {
+        echo 'Build lib...'
         sh 'git config --global user.name "Jenkins"'
         sh 'git config --global user.email "jenkins@jwt.ovh"'
         sh 'git checkout main'
