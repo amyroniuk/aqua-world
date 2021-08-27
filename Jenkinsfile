@@ -20,12 +20,11 @@ pipeline {
 
     stage('Build') {
       steps {
+        sh 'git config --global user.name "Jenkins"'
         sh 'git config --global user.email "jenkins@jwt.ovh"'
-        sh 'git config --global user.name "jenkins"'
         sh 'git checkout main'
-        sh 'git status'
         sh 'npm run build'
-        sh 'git commit -am "Build"'
+        sh 'git commit -am "Build lib"'
         sshagent (credentials: ['jenkins-github']) {
           sh 'git push origin main'
         }

@@ -6,8 +6,6 @@ import fs from "fs";
 import yargs from "yargs/yargs";
 import { hideBin } from "yargs/helpers";
 
-console.log('test');
-
 const argv = yargs(hideBin(process.argv))
   .option('csv', {
     demandOption: true,
