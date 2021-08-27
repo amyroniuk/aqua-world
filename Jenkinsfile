@@ -25,7 +25,6 @@ pipeline {
         sh 'git config --global user.email "jenkins@jwt.ovh"'
         sh 'git checkout main'
         sshagent (credentials: ['jenkins-github']) {
-          sh 'git remote show origin'
           sh 'git pull'
         }
         sh 'npm run build'
