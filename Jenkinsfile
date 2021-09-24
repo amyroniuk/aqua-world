@@ -28,7 +28,7 @@ pipeline {
           sh 'git pull'
         }
         sh 'npm run build'
-        sh 'git commit -am "Build lib"'
+        sh 'git diff-index --quiet HEAD || git commit -am "Build lib"'
         sshagent (credentials: ['jenkins-github']) {
           sh 'git push origin main'
         }
