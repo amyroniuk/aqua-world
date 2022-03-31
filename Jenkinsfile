@@ -20,19 +20,24 @@ pipeline {
 
     stage('Build') {
       steps {
-        echo 'Build lib...'
-        sh 'git config --global user.name "Jenkins"'
-        sh 'git config --global user.email "jenkins@jwt.ovh"'
-        sh 'git checkout main'
-        sshagent (credentials: ['jenkins-github']) {
-          sh 'git pull'
-        }
+//         echo 'Build lib...'
+//         sh 'git config --global user.name "Jenkins"'
+//         sh 'git config --global user.email "jenkins@jwt.ovh"'
+//         sh 'git checkout main'
+//         sshagent (credentials: ['jenkins-github']) {
+//           sh 'git pull'
+//         }
         sh 'npm run build'
-        sh 'git diff-index --quiet HEAD || git commit -am "Build lib"'
-        sshagent (credentials: ['jenkins-github']) {
-          sh 'git push origin main'
-        }
+//         sh 'git diff-index --quiet HEAD || git commit -am "Build lib"'
+//         sshagent (credentials: ['jenkins-github']) {
+//           sh 'git push origin main'
+//         }
       }
     }
+  }
+  post {
+      always {
+          archiveArtifacts artifacts: 'lib/**', onlyIfSuccessful: true
+      }
   }
 }
